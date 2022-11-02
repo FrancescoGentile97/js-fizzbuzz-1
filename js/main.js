@@ -9,17 +9,16 @@ for (let i = 0; i < 100; i++) {
 
     if ((j % 3 == 0) && (j % 5 == 0)) {
         console.log("FizzBuzz");
-        valore = `FizzBuzz`;
+        square.innerHTML += `<div class="my-col bg-danger">FizzBuzz</div>`;
     } else if (j % 3 == 0) {
         console.log("Fizz");
-        valore = `Fizz`;
+        square.innerHTML += `<div class="my-col bg-success">Fizz</div>`;
     } else if (j % 5 == 0) {
         console.log("Buzz");
-        valore = `Buzz`;
+        square.innerHTML += `<div class="my-col bg-warning">Buzz</div>`;
     } else {
         console.log(j);
         valore = j;
+        square.innerHTML += `<div class="my-col">${valore}</div>`;
     }
-
-    square.innerHTML += `<div class="col my-col">${valore}</div>`;
 }
